@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Produto -Full Stack Eletro</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="javaScript/funcoes.js"></script>
+</head>
+
+<body>
+
+  <!-- Inicio do Menu-->
+
+
+  <nav class="menu">
+    <a href="index.html"><img src="imagens/logo.jpeg" width="60px"></a>
+    <input type="text">
+    <label onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="pesquisar">pesquisar</label>
+    <a onmouseover="changecolor(this)" onmouseout="changecolor(this)" href="Nossos_Produtos.html"
+      style="margin-left: 10%;"> Nossos Produtos</a>
+    <a onmouseover="changecolor(this)" onmouseout="changecolor(this)" href="Nossas_Lojas.html"> Nossas lojas</a>
+    <a onmouseover="changecolor(this)" onmouseout="changecolor(this)" href="Fale_Conosco.html"> Fale Conosco</a>
+    <button onmouseover="changecolor(this)" onmouseout="changecolor(this)">cadastre-se</button>
+  </nav>
+
+
+
+  <h1 class="cabecalhoproduto">Produto</h1>
+
+
+  <div Class="categorias">
+    <h3>Categoria </h3>
+    <ul>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_todos()">todos (12)</li>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_categoria('geladeira')">
+        Geladeira (3)</li>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_categoria('fogao')">Fogões (2)
+      </li>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_categoria('microondas')">
+        Microondas (3)</li>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_categoria('lavaroupas')">
+        Lavadoras de roupas (2)</li>
+      <li onmouseover="changecolor(this)" onmouseout="changecolor(this)" onclick="exibir_categoria('lavalouças')">
+        Lava-louças (2)</li>
+    </ul>
+  </div>
+
+  <div class="produtos">
+    <div class="box_produto" id="geladeira" style="display:inline-block">
+      <img src="./imagens/frost3.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Geladeira frost free brastemp side invese 540 litros</p>
+      <hr>
+      <p class="descrição"><strike>R$ 6.385,00</strike></p>
+      <p class="preço">R$ 5.019,00</p>
+    </div>
+
+
+    <div class="box_produto" id="geladeira" style="display:inline-block">
+      <img src="imagens/frost2.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Geladeira frost free brastemp Branca 375 litros</p>
+      <hr>
+      <p class="descrição"><strike>R$ 2.068,60</strike></p>
+      <p class="preço">R$ 1.910,90</p>
+    </div>
+
+
+
+    <div class="box_produto" id="geladeira" style="display:inline-block">
+      <img src="imagens/frost1.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Geladeira frost free brastemp Consul parta 340 litros></p>
+      <hr>
+      <p class="descrição"><strike>R$ 2.109,90</strike>
+      <p class="preço">R$ 2.069,00" </p>
+    </div>
+
+
+    <div class="box_produto" id="fogao" style="display:inline-block">
+      <img src="imagens/fogao11.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Fogão 4 Bocas Consul Inox com Mesa de Vidro></p>
+      <hr>
+      <p class="descrição"><strike>R$ 1.299,00</strike></p>
+      <p class="preço">R$ 1.129,00</p>
+    </div>
+
+
+
+    <div class="box_produto" id="fogao" style="display:inline-block">
+      <img src="imagens/Fogao10.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição"> Fogão 4 Bocas Altas Monaco com Acendiemnto Automantico</p>
+      <hr>
+      <p class="descrição"><strike> R$ 699,00 </strike> </p>
+      <p class="preço">R$ 519,70 </p>
+    </div>
+
+    <div class="box_produto" id="microondas" style="display:inline-block">
+      <img src="imagens/micro1.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição"> Microondas Consul 32 lITROS Inox 220V></p>
+      <hr>
+      <p class="descrição"><strike> R$ 680,00</strike> </p>
+      <p class="preço"> R$ 409,88 </p>
+    </div>
+
+
+
+    <div class="box_produto" id="microondas" style="display:inline-block">
+      <img src="imagens/micro2.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição"> Microonadas 25L Espelhado Philco 220V></p>
+      <hr>
+      <p class="descrição"><strike>R$ 508,70</strike></p>
+      <p class="preço"> R$ 464,53 </p>
+    </div>
+
+    <div class="box_produto" id="microondas" style="display:inline-block">
+      <img src="imagens/micro3.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição"> Forno de Microondas Eletrolux 20L Branco></p>
+      <hr>
+      <p class="descrição"><strike> R$ 450,99</strike> </p>
+      <p class="preço">R$ 436,05 </p>
+    </div>
+
+
+    <div class="box_produto" id="lavaroupas" style="display:inline-block">
+      <img src="imagens/lavaroupa1.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Lavadoura de Roupas Brastemp 21KG com Turbo Peformance Branca
+        <hr>
+      <p class="descrição"><strike>R$ 1.660,99</strike> </p>
+      <p class="preço">R$ 1,214,20</p>
+    </div>
+
+    <div class="box_produto" id="lavaroupas" style="display:inline-block">
+      <img src="imagens/lavaroupa.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Lavadoura de Roupa Philco Inverter 12KG</p>
+      <hr>
+      <p class="descrição"><strike>R$ 6.385,00</strike> </p>
+      <p class="preço"> R$ 5.019,00 </p>
+    </div>
+
+    <div class="box_produto" id="lavalouças" style="display:inline-block">
+      <img src="imagens/lava1.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Lava Louças Eletrolux Inox com 10 Serviços de programa de Lavagem e Painel Blue Touch</p>
+      <hr>
+      <p class="descrição"><strike>R$ 3.599,00</strike> </p>
+      <p class="preço"> R$ 2.799,90</p>
+    </div>
+
+    <div class="box_produto" id="lavalouças" style="display:inline-block">
+      <img src="imagens/lava2.jpeg" width="120 px" onclick="imagem(this)">
+      <br>
+      <p class="descrição">Lava louças Compacta 8 Serviços Branca 127V Brastemp</p>
+      <hr>
+      <p class="descrição"><strike> R$ 1.970,50</strike> </p>
+      <p class="preço"> R$ 1.730,61</p>
+    </div>
+
+  </div>
+
+
+  <br> <br><br> <br>
+  <br><br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br><br>
+
+
+  <footer class="rodape">
+    <p onmouseover="changecolor(this)" onmouseout="changecolor(this)" class="fcartao"><b>Formas de pagamento:</b></p>
+    <br><br><br><br>
+
+    <img src="imagens/imagem3.png" alt="imagem3"><br>
+    <p>&copy;Recode</p>
+  </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Full Stack Eletro</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="javaScript/funcoes.js"></script>
+</head>
+
+<body>
+    <!-- Inicio do Menu-->
+
+    <nav class="menu">
+        <a href="index.html"><img src="imagens/logo.jpeg" width="60px" onclick="logo(this)"></a>
+        <input type="text">
+        <label onmouseover="changecolor(this)" onclick="pesquisar">Pesquisa</label>
+        <a onmouseover="changecolor(this)" href="Nossos_Produtos.html" style="margin-left: 10%;"> Nossos Produtos</a>
+        <a onmouseover="changecolor(this)" href="Nossas_Lojas.html"> Nossas lojas</a>
+        <a onmouseover="changecolor(this)" href="Fale_Conosco.html"> Fale Conosco</a>
+        <button onmouseover="changecolor(this)">cadastre-se</button>
+    </nav>
+
+
+    <br> <br><br>
+
+    <div class="entrada">
+        <h2 onmouseover="changecolor(this)">Seja bem vindo(a)</h2>
+    </div>
+
+    <button onclick="carConteudo()">Click Aqui</button>
+    <p id="mensagem"></p>
+    <br> <br><br>
+
+
+    <br><br><br>
+    <footer class="rodape">
+        <p onmouseover="changecolor(this)" class="fcartao"><b>Formas de pagamento:</b></p>
+        <br><br> <br><br>
+        <img id="cartcredito" src="imagens/imagem3.png" alt="imagem3" onclick="ftcredito(this)"><br>
+        <p>&copy;Recode</p>
+    </footer>
+
+</body>
+
+
+</html>
